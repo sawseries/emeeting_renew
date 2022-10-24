@@ -1,0 +1,24 @@
+label span {
+    font-size:10pt;
+  }
+  label.error {
+      color: red;
+      font-size:10pt;
+      display: block;
+      margin-top: 5px;
+  }
+  input.error {
+      border: 1px dashed red;
+      font-weight: 300;
+      color: red;
+  }
+  
+
+  
+      @import url('https://fonts.googleapis.com/css?family=Poppins');
+  
+  /* BASIC */
+  
+  
+  
+  
