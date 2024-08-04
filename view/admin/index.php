@@ -1,6 +1,6 @@
 
 <?php
-require_once './layouts/header.php';
+require_once './layouts/header_admin.php';
 ?>
 
 
@@ -8,6 +8,7 @@ require_once './layouts/header.php';
 
 <div class="container white" id="page-content-wrapper" style='min-height:1200px;'>                 
   <div class="row">      
+
 
   <?php if ((isset($_SESSION["Auth"]) == true)) {  ?> 
    
@@ -199,5 +200,5 @@ require_once './layouts/header.php';
 
 
 <?php
-require_once './layouts/footer.php';
+require_once './layouts/footer_main.php';
 ?>

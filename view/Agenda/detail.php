@@ -1,6 +1,6 @@
 
 <?php
-require_once './layouts/header.php';
+require_once './layouts/header_admin.php';
 ?>
 
 <script type="text/javascript" src="./front/master/master_element.js?key=<?php echo time(); ?>"></script>

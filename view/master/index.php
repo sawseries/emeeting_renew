@@ -1,8 +1,21 @@
-<?php require_once './layouts/header_main.php'; ?>
-<div class="jumbotron"  style="background-color:#2565AE;color:white;">
+<?php 
+
+
+if($_SESSION["status"]>1){
+require_once './layouts/header_admin.php'; 
+}else{
+    require_once './layouts/header_main.php';     
+}
+
+?>
+
+
+
+
+<div class="jumbotron"  style="background-color:#2565AE;color:white;margin:20px;">
     <div class="container">
     <div class="row display" style="">
-        <table style="width:100%;table-layout: fixed;font-family: 'Kanit', sans-serif;border-top:2px solid #007dcc;">
+        <table style="width:100%;table-layout: fixed;border-top:2px solid #007dcc;">
             <?php if (isset($meeting)) { ?>
                 <tr>
                     <td style="width:10%;"><img src="./assets/image/stsp1.jpg?key=<?php echo time(); ?>" style="width:200px;"></td>
@@ -54,7 +67,7 @@
     </div>
     
         <div class="mobile">
-        <table style="width:100%;table-layout: fixed;font-family: 'Kanit', sans-serif;border:1px solid white;">
+        <table style="width:100%;table-layout: fixed;border:1px solid white;">
             <?php if (isset($meeting)) { ?>
            
                 <tr>
@@ -179,4 +192,5 @@
 
     </div>
 </div>
+                                       
 <?php require_once './layouts/footer_main.php'; ?>

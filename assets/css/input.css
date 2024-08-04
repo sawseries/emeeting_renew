@@ -305,11 +305,11 @@ input.error {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;
-    padding: 30px;
-    width: 90%;
+    padding: 10px;
+    width: 100%;
     position: relative;
     padding: 0px;
-    max-width:500px;
+    max-width:360px;
    /* -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -320,8 +320,8 @@ input.error {
                 border:1px solid #778899;
                 text-align: center;
                 margin:0 auto;
-                height:550px;
-                padding-top:50px;
+                height:360px;
+                padding-top:20px;
                 
   }
   
@@ -372,26 +372,26 @@ input.error {
   @media (min-width: 768px) and (max-width: 1024px) {
 
       
-    #formContent {
+   /* #formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
       padding: 30px;
       width: 100%;
-      max-width: 800px;
+      max-width: 300px;
       position: relative;
       padding: 0px;
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   }
     
   /*mobile*/
   @media screen and (max-width: 600px) {
 
     
-    #formContent {
+   /* #formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -402,7 +402,7 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
 
   }
   
@@ -413,7 +413,7 @@ input.error {
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
-    #formContent {
+    /*#formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -424,7 +424,7 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   
   }
   
@@ -434,7 +434,7 @@ input.error {
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-    #formContent {
+    /*#formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -445,7 +445,7 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   }
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -453,7 +453,7 @@ input.error {
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
-    #formContent {
+    /*#formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -464,13 +464,13 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   }
   
   /*ipad*/
   
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    #formContent {
+    /*#formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -481,13 +481,13 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   
   }
   
   
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    #formContent {
+    /*#formContent {
       -webkit-border-radius: 10px 10px 10px 10px;
       border-radius: 10px 10px 10px 10px;
       background: #fff;
@@ -498,7 +498,7 @@ input.error {
       -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
       text-align: center;
-    }
+    }*/
   
   
   }

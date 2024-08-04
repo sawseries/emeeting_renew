@@ -80,7 +80,13 @@ class AuthController extends Base {
             $_SESSION["status"] = $term["status"];
             $_SESSION["user"] = $term["username"];
             $_SESSION["user_id"] = $term["id"];
-            Redirect::url("Master", "index");
+
+            
+                if($term["status"]>1){
+                    Redirect::url("Admin", "index");
+                }else{
+                    Redirect::url("Master", "index");
+                }
             $update = Base::query("update user set last_login = '".date('Y-m-d H:i:s')."',ip='".Base::ip()."' where id='".$term["id"]."'")->update();
             }else{
                 Redirect::view("login/login", array("fail" => "กรุณารอตรวจสอบสิทธิ์ และยืนยันผล การลงทะเบียนของท่านทาง Email"));

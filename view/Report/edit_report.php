@@ -6,7 +6,7 @@
 </head>
 
 
-<div class="col-md-10 blog-main">
+<div class="col-md-12 blog-main">
     <div class="blog-post" style="padding:1em;">
  <div style="min-height:1000px;">
     <div class="header_topic"><h4><i class="fa fa-plus-circle"></i> รายงานการประชุม </h4></div>

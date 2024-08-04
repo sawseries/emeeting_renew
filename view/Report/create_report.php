@@ -1,10 +1,10 @@
-<?php require_once './layouts/header_admin.php'; ?>
+<?php require_once './layouts/header_main.php'; ?>
 <head>
 <script src="./front/report/report_create.js?key=<?php echo time(); ?>"></script>
 </head>
 
 
-<div class="col-md-10 blog-main">
+<div class="col-md-12 blog-main">
     <div class="blog-post" style="padding:1em;">
    <form id='frm_report' action="./index.php?controller=Report&action=insert_report" method="post" enctype="multipart/form-data" />
         

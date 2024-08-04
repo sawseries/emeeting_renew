@@ -11,13 +11,13 @@ class Redirect extends Base{
         
     }
 
-    public function url($controller,$action) {
+    public static function url($controller,$action) {
         $location = "?controller=".$controller."&action=".$action."";
         //$location = "./?".$controller."/".$action."";
         header("Location: ".$location."");
     }
 
-    public function para($controller,$action,Array $para) {
+    public static function para($controller,$action,Array $para) {
 
         $location = "./?controller=".$controller."&action=".$action."";
        // $location = "./?".$controller."/".$action."";

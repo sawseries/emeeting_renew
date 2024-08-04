@@ -1,6 +1,6 @@
 <?php require_once './layouts/header_admin.php'; ?>
 
-<div class="col-md-10 blog-main">
+<div class="col-md-12 blog-main">
     <div class="blog-post" style="padding:1em;">
         <h2 class="blog-post-title">รายงานการประชุม</h2>
         <p class="blog-post-meta" style="color:#999;">อุทยานวิทยาศาสตร์ ม.สงขลานครินทร์</p>

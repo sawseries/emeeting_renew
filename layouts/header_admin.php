@@ -1,137 +1,512 @@
-<html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <title>E-meeting | ระเบียบวาระการประชุม อุทยานวิทยาศาสตร์ ม.สงขลานครินทร์</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/blog/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css" />
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>E-meeting | ระเบียบวาระการประชุม อุทยานวิทยาศาสตร์ ม.สงขลานครินทร์</title>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
-    
-     <script type="text/javascript" src="./assets/js/jquery3.0.0.js"></script>
+
+        <link href="./assets/css/master.css?key=<?php echo time(); ?>" type="text/css" rel="stylesheet" />
+        <link href="./assets/css/editor.css?key=<?php echo time(); ?>" rel="stylesheet" />
+        <link href="./assets/css/login.css?key=<?php echo time(); ?>" rel="stylesheet" />  
+        <!--<link href="./assets/theme/css/bootstrap.min.css" rel="stylesheet">-->
+        <link href="./assets/theme/css/master.css?key=<?php echo time(); ?>" rel="stylesheet">
+        
+        
+        <script type="text/javascript" src="./assets/js/jquery3.0.0.js"></script>
         <script type="text/javascript" src="./assets/js/jquery.modal.min.js"></script>
         <script type="text/javascript" src="./assets/js/jquery1.8.3.min.js"></script>
         <script type="text/javascript" src="./assets/js/jquery-ui.min.js"></script>
         <script type="text/javascript" src="./assets/js/jquery.validate.min.js"></script>
         <script type="text/javascript" src="./assets/assets/js/scripts.js?key=<?php echo time(); ?>"></script>
         <script type="text/javascript" src="./app/control.js?key=<?php echo time(); ?>"></script>
+
+        <script type="text/javascript" src="./assets/assets/js/scripts.js?key=<?php echo time(); ?>"></script>
+        <script type="text/javascript" src="./app/control.js?key=<?php echo time(); ?>"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
       
-      
-        <link href="./assets/css/master.css?key=<?php echo time(); ?>" type="text/css" rel="stylesheet" />
-        <link href="./assets/css/editor.css?key=<?php echo time(); ?>" rel="stylesheet" />
-        <link href="./assets/css/login.css?key=<?php echo time(); ?>" rel="stylesheet" />  
-        <!--<link href="./assets/theme/css/bootstrap.min.css" rel="stylesheet">-->
-        <link href="./assets/theme/css/master.css?key=<?php echo time(); ?>" rel="stylesheet">
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/smoothness/jquery-ui.css" />
-        <!--css-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<script>
+$(document).ready(function () {
+});
+
+    $(window).scroll(function(){
     
+            if($(this).scrollTop() > 100){
+                $('.navbar').addClass('sticky')
+            } else{
+                $('.navbar').removeClass('sticky')
+            }
+        });
+      
+</script>
 
-    <style>
-        .card{
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        }
+<style>
+   
+body{
 
-        .nav-header{
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-        }
-        .body{
-            background: #ECE9E6;
-        }
+    font-family: "PSU-Stidti-Regular","PSU-Stidti-Light","PSU-Stidti-Bold",sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
 
-        .ul-master{
-            width:100%;
-            margin-top:20px;
-        }
+@font-face {
+  font-family: PSU-Stidti-Regular;
+  src: url('./assets/font/PSUStidti/PSU-Stidti-Regular.otf');
+}
 
-        .ul-master li{
-            padding:0.2em;
-        }
+@font-face {
+  font-family: PSU-Stidti-Light;
+  src: url('./assets/font/PSUStidti/PSU-Stidti-Light.otf');
+}
 
-        .background-1{
-            background: #457fca;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #5691c8, #457fca);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #5691c8, #457fca); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
+@font-face {
+  font-family:PSU-Stidti-Bold;
+  src: url('./assets/font/PSUStidti/PSU-Stidti-Bold.otf');
+}
 
-        .block{
-            padding-top:1em;
-            padding-bottom:1em;
-        }
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: max-height 0.2s ease-in;
+    opacity: 0.8;
+}
 
-        .header_blue{
-            background-color:#2B547E;
-            color:white;
-        }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PSU-Stidti-Regular","PSU-Stidti-Light","PSU-Stidti-Bold",sans-serif;
+}
 
-        .sidenav{
-            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-        }
-    </style>
+.navbar {
+    /*background-color:#0c4678;*/
+    box-shadow: 5px 0px 5px #ccc;
+    width:100vm;  
+    padding: 0px 60px;
+    background-color:#f7f7f7;
+    margin:0;
+    border:1px solid #778899;
+}
+
+.navbartop{
+    background-color:#00a8cf;
+    box-shadow: 5px 0px 5px #ccc;
+    width:100vm;  
+    padding: 0px 40px;
+    height: 40px;
+    color:white;
+}
+
+
+.navbar-toggle{
+    list-style-type: none;
+    display: flex;
+    width:auto;  
+    float:right; 
+}
+
+.navbar-toggle button{
+    background-color:transparent;
+    padding:0.2rem;
+    font-size:18pt;
+    border-radius:5px;
+}
+
+.navbar-logo{
+    list-style-type: none;
+    display: flex;
+    width:auto;
+}
+
+.navbar-logo li a{
+  display: block;
+  text-decoration: none;
+  color: #444;
+  font-weight: 700;
+  transition: 0.5s all;
+}
+
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  width:auto;
+}
+
+.navbar-login{
+    list-style-type: none;
+    display: flex;
+    width:auto;
+}
+
+.navbar-login li a {
+ 
+  text-decoration: none;
+  color: #FFF;
+  padding:10px 40px;
+  font-weight: 700;
+  transition: 0.4s all;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  padding:0;
+  font-weight: 700;
+  transition: 0.4s all;
+}
+
+.navbar-links li.navbar-dropdown {
+  position: relative;
+}
+
+.navbar-links .navbar-dropdown .dropdown a{
+  display: block;
+  text-decoration: none;
+  color: #444;
+  padding:0;
+  font-weight: 700;
+  transition: 0.4s all;
+}
+
+.navbar-links li.navbar-dropdown:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  display:block;  
+}
+
+.navbar-links li.navbar-dropdown .dropdown {
+  /*visibility: hidden;*/
+  opacity: 0;
+  position: absolute;
+  padding:0;
+  top:100%;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  z-index: 111;  
+}
+
+.dropdown{
+    /*display:none;*/
+    transition: transform .5s cubic-bezier(0.88,-0.72, 0, 1), opacity .3s ease-in-out;
+	transform: translateY(-4rem);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    display:none;  
+}
+
+
+.navbar-links li.navbar-dropdown .dropdown a {
+  font-weight: 400;
+  padding:0; 
+  color:black;
+}
+.navbar-dropdown .dropdown a:hover {
+  padding-left: 30px;
+}
+
+.navbar-links li a{
+  color: black;
+}
+
+
+.navbar-links li a .active{
+  color: white;
+}
+
+.navbar-links li a:hover {
+  color: #4EACF8;
+  background-color:#e9eef4;
+}
+
+.navbar-toggle{
+    display:none;
+}
+
+.navbar-collapse{
+    width:auto;
+}
+
+.navbar-links li.navbar-dropdown .lbmenu span:hover{
+      color: #4EACF8;
+      background-color:#e9eef4;
+    }
+
+    .navbar-links li.navbar-dropdown .lbmenu span{
+      padding:10px 40px;
+      font-variant : small-caps;
+      cursor : pointer;
+      display: block;
+    }
+
+    .navbar-links .navbar-dropdown .dropdown li{
+      list-style-type:none;
+      display:block;
+    }
+
+    .navbar-links .navbar-dropdown .dropdown li:hover{
+      color: #4EACF8;
+      background-color:#e9eef4;
+    }
+
+
+    .active{
+        color: #FFF;
+        background-color:#56baed;
+    }
+
+
+   
+@media (max-width: 920px) {
+    .navbar-login{
+        display:none;
+    }
+
+    .navbar-toggle{
+      display:block;
+    }
+
+    .navbar {
+    padding: 0px;
+    }
+
+    .navbar-links{
+        width: 100vh;
+        transition: all 0.3s ease-in;
+        top:0;
+        display:block;
+    }
+
+
+    .navbar-links li.navbar-dropdown:hover .dropdown {
+      visibility: hidden;
+      opacity: 1;
+      transform: translateY(0px);
+      display:none;  
+    }
+
+
+    .navbar-links li.navbar-dropdown .lbmenu span{
+      padding:2em;
+      color : black;
+      font-variant : small-caps;
+      cursor : pointer;
+      display: block;
+      width:100vh;
+    }
+
+    .navbar-links li.navbar-dropdown .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    padding: 20px 0;
+    transform: translateY(50px);
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 111;
+    transition: 0.4s all;
+    width:100vh;
+   }
+
+   .dropdown{
+    display:none;
+    transition: transform .6s cubic-bezier(1,-0.72, 0, 1), opacity .6s ease-in-out;
+	transform: translateY(-10rem);
+    }
+
+    #menu1:checked +ul{
+      visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    display:block;
+    position:relative;  
+    }
+
+    #menu2:checked +ul{
+      visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    display:block;
+    position:relative;  
+    }
+
+    #menu3:checked +ul{
+      visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    display:block;
+    position:relative;  
+    }
+
+    #menu4:checked +ul{
+      visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    display:block;
+    position:relative;  
+    }
+
+    #menu5:checked +ul{
+      visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+    display:block;
+    position:relative;  
+    }
+
+   
+}
+
+/*-----------*/
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 5s;
+}
+
+</style>
+
 </head>
 <body>
-         <div class="topnav nav-header" id="myTopnav" style='padding:0em;'>
-            <a href="javascript:void(0);" style="font-size:15px;text-align:right;width:100%;" class="icon mobile_menu" onclick="navbarmobile()">&#9776;</a>
-            <a class="navbrand" href="./index.php?controller=Master&action=index" style='padding:0.5em;'>
-                <img src="https://www.dnaconsult.co.th/images/PSUSP(ThaiVersion).jpg" style="width:200px;">
-            </a> 
-            <a id='menu1' href="./index.php?controller=Master&action=index"><li class="fa fa-home"></li> หน้าแรก</a> 
-            <?php if ((auth() == true)) { ?>
-               <!-- <?php if (preview(userid(), 'read', 'Member')) { ?> <a id='menu2' href="./index.php?controller=Master&action=shwdoc&type=1">ระเบียบวาระการประชุม</a><?php } ?>
-                <?php if (preview(userid(), 'read', 'Member')) { ?> <a id='menu3' href="./index.php?controller=Master&action=shwdoc&type=2"> รายงานการประชุม</a><?php } ?> -->
-                <div id='menu6' class="dropdownx mobile_menu" style='float:right;'>
-                    <button class="dropbtnx"><i class="fa fa-user-circle" style="font-size:14px;"></i> ยินดีต้อนรับ คุณ <?= fullname(); ?>
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-contentx">  
-                        <?php if (user_status() >= 2) { ?>
-                            <?php if (preview(userid(), 'read', 'Agenda')) { ?>    
-                                <a href="./index.php?controller=Admin&action=showdoc&doc=1">ระเบียบวาระการประชุม</a>
-                            <?php } ?>
-                            <?php if (preview(userid(), 'read', 'Report')) { ?>    
-                                <a href="./index.php?controller=Admin&action=showdoc&doc=2">รายงานการประชุม</a>
-                            <?php } ?>
-                            <?php if (preview(userid(), 'read', 'Member')) { ?>    
-                                <a href="./index.php?controller=Admin&action=showdoc&doc=3">การจัดการสมาชิก</a>
-                            <?php } ?>
-                        <?php } ?>
-                        <a href="./index.php?controller=Auth&action=logout">Logout <span class="sr-only">(current)</span></a>       
-                    </div>
-                </div> 
+    <div class="navbartop">
+    <ul class="navbar-logo" style="float:left;color:white;">Emeeting | อุทยานวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์</ul>
+    </div>
+    <div class="navbar">
+      <ul class="navbar-logo" style="float:left;margin-right:20px;">
+      <li class="navlogo"><img src="./assets/image/PSUSP_logo.jpg" width="200px"  height="40px" /></li>     
+      </ul>
 
-            <?php } else { ?>
-                <a id='menu4' class="mobile_menu"  style='float:right;'  href="./index.php?controller=Auth&action=registerpage">Register</a>   
-                <a id='menu5' class="mobile_menu" style='float:right;' href="./index.php?controller=Auth&action=login">Login</a>     
-            <?php } ?>
+      <ul class="navbar-toggle" style="float:right;">
+        <li>
+            <a><button  type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="fa fa-bars"></span>
+                </button>
+            </a>
+        </li>
+      </ul>
 
-        </div>
-    <main role="main" class="container-fluid" style="margin-top:10px;">
-        <div class="row block" style="min-height:1000px;">
-            <aside class="col-md-2 col-lg-2 blog-sidebar sidenav">
-                <div class="p-2">
-                    <h4 class="font-italic">E-meeting</h4>
-                    <ol class="list-unstyled mb-0">
-                        <li><a href="./index.php?controller=Admin&action=showdoc&doc=1">ระเบียบวาระการประชุม</a></li>
-                        <li><a href="./index.php?controller=Admin&action=showdoc&doc=2">รายงานการประชุม</a></li>
-                    </ol>
-                </div>
-                <div class="p-2">
-                    <h4 class="font-italic">Admin</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="./index.php?controller=Admin&action=showdoc&doc=3">การจัดการสมาชิก</a></li>
-                    </ol>
-                </div>
-            </aside><!-- /.blog-sidebar -->
+      <?php if ((auth() == true)) { ?>
+     <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+     <ul class="navbar-links" style="float:left;">  
+     <li class="navbar-dropdown active">
+          <label for="menu1" class="lbmenu" style="color:white;"><span><a href="./index.php?controller=Master&action=index">หน้าแรก</a></span></label> 
+        </li>
+
+        <li class="navbar-dropdown">
+          <label for="menu2" class="lbmenu"><span><a href="./index.php?controller=Master&action=shwdoc&type=1">ระเบียบวาระการประชุม</a></span></label> 
+          <input id="menu2" type="checkbox" name="menu" hidden>
+        </li>
+        <li class="navbar-dropdown">
+          <label for="menu3" class="lbmenu"><span><a href="./index.php?controller=Master&action=shwdoc&type=2">รายงานการประชุม</a></span></label> 
+          <input id="menu3" type="checkbox" name="menu" hidden>
+        </li>
+
+    </ul>
+    <ul class="navbar-login active" style="float:right;height:40px;">
+        <li><a href="./index.php?controller=Auth&action=logout">Logout</a></li>
+    </ul>
+    <?php }else{ ?>
+      <!--<ul class="navbar-links" style="float:left;">  
+
+        <li class="navbar-dropdown active">
+          <label for="menu1" class="lbmenu"><span>หน้าแรก</span></label> 
+        </li>
+
+        <li class="navbar-dropdown">
+          <label for="menu1" class="lbmenu"><span>เกี่ยวกับเรา</span></label> 
+          <input id="menu1" type="checkbox" name="menu" hidden>
+          <ul class="dropdown"> 
+            <li href="#">Tomato Soup</a>
+            <li href="#">Veg Manchow Soup</a>
+            <li href="#">Veg Hot Soup</a>
+          </ul>
+        </li>
+        <li class="navbar-dropdown">
+          <label for="menu2" class="lbmenu"><span>หลักสูตร</span></label> 
+          <input id="menu2" type="checkbox" name="menu" hidden>
+          <ul class="dropdown"> 
+            <li href="#">Tomato Soup</a>
+            <li href="#">Veg Manchow Soup</a>
+            <li href="#">Veg Hot Soup</a>
+          </ul>
+        </li>
+        <li class="navbar-dropdown">
+          <label for="menu3" class="lbmenu"><span>ติดต่อ</span></label> 
+          <input id="menu3" type="checkbox" name="menu" hidden>
+          <ul class="dropdown"> 
+            <li href="#">Tomato Soup</a>
+            <li href="#">Veg Manchow Soup</a>
+            <li href="#">Veg Hot Soup</a>
+          </ul>
+        </li>
+        <li class="navbar-dropdown">
+          <label for="menu4" class="lbmenu"><span>ผู้เกี่ยวข้อง</span></label> 
+          <input id="menu4" type="checkbox" name="menu" hidden>
+          <ul class="dropdown"> 
+            <li href="#">Tomato Soup</a>
+            <li href="#">Veg Manchow Soup</a>
+            <li href="#">Veg Hot Soup</a>
+          </ul>
+        </li>
+        <li class="navbar-dropdown">
+          <label for="menu5" class="lbmenu"><span>Chinese</span></label> 
+          <input id="menu5" type="checkbox" name="menu" hidden>
+          <ul class="dropdown"> 
+            <li href="#">Tomato Soup</a>
+            <li href="#">Veg Manchow Soup</a>
+            <li href="#">Veg Hot Soup</a>
+          </ul>
+        </li>
+      </ul>-->
+    
+      <ul class="navbar-login active" style="float:right;">
+        <li><a href="./index.php?controller=Auth&action=login">Login</a></li>
+      </ul>
+      <?php } ?>
+    </div>
+</div>
+
+<div class="container-fluid white" id="page-content-wrapper" style='min-height:1200px;'>                 
+  
+<div class="container">
+<div class="row">      
 
 
-
+  <br><br>
+  <a href="./index.php?controller=Agenda&action=index">ระเบียบวาระการประชุม</a> |  <a href="./index.php?controller=Report&action=index">รายงานการประชุม</a> | <a href="./index.php?controller=User&action=index">การจัดการสมาชิก</a>
+  <br><br>
+    </div>
+    </div>  

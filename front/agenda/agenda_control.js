@@ -46,7 +46,7 @@ $(function () {
                         type: "POST",
                         data: { id: ids, no: NewPosition },
                         success: function (data) {
-
+                            
                         },
                         error: function (xhr, desc, err) {
                             alert(err);
@@ -116,6 +116,7 @@ function delete_term(codes) {
 
 function updates_active(fields, codes, parameter) {
 
+ 
     var values = parameter.value;
 
     $.ajax({
@@ -123,7 +124,7 @@ function updates_active(fields, codes, parameter) {
         type: "POST",
         data: { field: fields, value: values, code: codes },
         success: function (data) {
-
+            //alert(data);
             if (data == true) {
                 window.location.reload();
             }
@@ -136,13 +137,19 @@ function updates_active(fields, codes, parameter) {
 
 function updates(fields, codes, parameter) {
 
+
+    alert(fields);
+    alert(codes);
+    alert(parameter);
+
+
     var values = parameter.value;
     $.ajax({
         url: "./index.php?controller=Agenda&action=update_meeting",
         type: "POST",
         data: { field: fields, value: values, code: codes },
         success: function (data) {
-            //alert(data);
+           
             if (data) {
                 $("#control_"+fields).hide();
                 $("#display_"+fields).html("");
@@ -211,7 +218,7 @@ $(function () {
                     contentType: false,
                     cache: false,
                     success: function (data, status, xhr) {
-                   alert(data);
+                   
                             if (data.trim()=="success") {
                                 window.location.reload();   
                             } else {

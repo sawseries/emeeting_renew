@@ -3,7 +3,7 @@
 <script src="./front/agenda/create_agenda.js?key=<?php echo time(); ?>"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 </head>
-<div class="col-md-10 blog-main">
+<div class="col-md-12 blog-main">
     <div class="blog-post" style="padding:1em;">
     <form id='frm_agenda' action="./index.php?controller=Agenda&action=insert_agenda" method="post" enctype="multipart/form-data" />
     <div class="header_topic" style='margin-top:20px;margin-bottom:10px;'>

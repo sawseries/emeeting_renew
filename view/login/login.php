@@ -23,7 +23,7 @@
       
   <div id="formContent"  style=''>
     <!-- Tabs Titles -->
-     <img src="https://www.dnaconsult.co.th/images/PSUSP(ThaiVersion).jpg" style="width:40%;">
+     <img src="https://www.dnaconsult.co.th/images/PSUSP(ThaiVersion).jpg" style="width:200px;">
      <br><h2 class="active"> E-Meeting</h2>
     <!-- Login Form -->
     <form method="post" id="loginform" action="./index.php?controller=Auth&action=login">
@@ -33,8 +33,8 @@
     </form>
     <!-- Remind Passowrd -->
     <div>
-      <a class="underlineHover" href='./index.php?controller=Auth&action=reset'>ลืมรหัสผ่าน</a>
-      <a href='./index.php?controller=Auth&action=registerpage'>Register</a>
+      <a class="underlineHover" href='./index.php?controller=Auth&action=reset'>ลืมรหัสผ่าน</a> | 
+      <a href='./index.php?controller=Auth&action=registerpage'>ลงทะเบียน</a>
     </div>
    </div> 
   </div>      

@@ -116,6 +116,7 @@ class AgendaController extends Base {
 
     public function insert_sub() {
         $code = subcode();
+        //echo $code;
         $top = $_POST["hdnsubtop"];
         $check = Base::query("select count(*) as cnt from meeting where code = '" . $code . "'")->one();
         $file_name = "";
@@ -125,7 +126,8 @@ class AgendaController extends Base {
         $txt_type = "";
         $errors = "";
         $file_size = 0;
-        if ($check['cnt'] <= 0) {
+        //echo $check['cnt'];
+       if ($check['cnt'] <= 0) {
 
             if ($type == '2') {
                 if (!empty($_POST["txtlink"])) {
@@ -164,10 +166,10 @@ class AgendaController extends Base {
                     . "set code='" . $code . "',title='',topic='" . $_POST["txttopic"] . "',no='" . $no["mx"] . "',number='" . $_POST["number"] . "',"
                     . "top='" . $top . "',doc_code='" . $_POST["hdndoc_code"] . "',type='" . $type . "',file_present='" . $file_present . "',link='" . $link . "',"
                     . "ip='" . Base::ip() . "'";
-            $insert = Base::query($sql)->insert();
-
-            echo "success";
+           $insert = Base::query($sql)->insert();
+           echo "success";
         }
+
     }
 
     public function update_row() {
@@ -178,7 +180,7 @@ class AgendaController extends Base {
 
     public function edit_agenda() {
         $code = $_GET["code"];
-        if (preview(userid(), 'edit', 'Agenda')) {
+        //if (preview(userid(), 'edit', 'Agenda')) {
 
             $item = Base::query("select * from meeting where code = '" . $code . "'")->one();
             $terms = $this->getterm_edit($item["code"]);
@@ -191,9 +193,9 @@ class AgendaController extends Base {
                 "topic" => $topic,
                 "subcnt" => $subcnt,
                 "Master" => $Master));
-        } else {
-            Redirect::para("Master", "detail", array("code" => $code));
-        }
+        //} else {
+         //   Redirect::para("Master", "detail", array("code" => $code));
+        //}
     }
 
     public function getterm_edit($code) {
@@ -442,6 +444,8 @@ class AgendaController extends Base {
     public function update_meeting() {
         Base::query("update meeting set " . $_POST["field"] . "='" . $_POST["value"] . "' where code='" . $_POST["code"] . "'")->execute();
         echo $_POST["value"];
+
+        //echo "update meeting set " . $_POST["field"] . "='" . $_POST["value"] . "' where code='" . $_POST["code"] . "'";
     }
 
     public function update_meeting_type() {

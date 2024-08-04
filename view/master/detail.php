@@ -1,4 +1,15 @@
-<?php require_once './layouts/header_main.php'; ?>    
+<?php 
+
+
+if($_SESSION["status"]>1){
+    require_once './layouts/header_admin.php'; 
+    }else{
+        require_once './layouts/header_main.php';     
+    }
+
+?>
+
+
 <script type="text/javascript" src="./front/master/master_element.js?key=<?php echo time(); ?>"></script>
 <style>
 
