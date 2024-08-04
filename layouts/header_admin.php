@@ -506,7 +506,7 @@ body{
 
 
   <br><br>
-  <a href="./index.php?controller=Agenda&action=index">ระเบียบวาระการประชุม</a> |  <a href="./index.php?controller=Report&action=index">รายงานการประชุม</a> | <a href="./index.php?controller=User&action=index">การจัดการสมาชิก</a>
+  <a href="./index.php?controller=Admin&action=index">หน้าแรก</a> | <a href="./index.php?controller=Agenda&action=index">ระเบียบวาระการประชุม</a> |  <a href="./index.php?controller=Report&action=index">รายงานการประชุม</a> | <a href="./index.php?controller=User&action=index">การจัดการสมาชิก</a>
   <br><br>
     </div>
     </div>  

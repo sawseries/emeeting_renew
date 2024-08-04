@@ -1,6 +1,7 @@
 <?php require_once './layouts/header_admin.php'; ?>
 
-<div class="col-md-12 blog-main">
+<div class="container white" id="page-content-wrapper" style='min-height:1200px;'>                 
+  <div class="row">    
     <div class="blog-post" style="padding:1em;">
         <h2 class="blog-post-title">รายงานการประชุม</h2>
         <p class="blog-post-meta" style="color:#999;">อุทยานวิทยาศาสตร์ ม.สงขลานครินทร์</p>
