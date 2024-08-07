@@ -498,7 +498,10 @@ background-color:#e9eef4;
 
 
   <br><br>
-  <a href="./index.php?controller=Admin&action=index">หน้าแรก</a> | <a href="./index.php?controller=Agenda&action=index">ระเบียบวาระการประชุม</a> |  <a href="./index.php?controller=Report&action=index">รายงานการประชุม</a> | <a href="./index.php?controller=User&action=index">การจัดการสมาชิก</a>
+  <span><a href="./index.php?controller=Admin&action=index">หน้าแรก</a></span> <span style="margin-left:10px;margin-right:10px;">|</span>  
+  <span><a href="./index.php?controller=Agenda&action=index">ระเบียบวาระการประชุม</a></span> <span style="margin-left:10px;margin-right:10px;">|</span>  
+  <span><a href="./index.php?controller=Report&action=index">รายงานการประชุม</a></span> <span style="margin-left:10px;margin-right:10px;">|</span>  
+  <span><a href="./index.php?controller=User&action=index">การจัดการสมาชิก</a> </span>
   <br><br>
     </div>
     </div>  
