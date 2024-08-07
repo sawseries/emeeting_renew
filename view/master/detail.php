@@ -22,21 +22,8 @@ if($_SESSION["status"]>1){
                     <?php if (isset($meeting)) { ?>
             
             
-                                <!-- Page mobile-->
-                    <div class="mobile" style="font-size:12pt;overflow-x:scroll;margin:0 auto;">
-                        <div class='topic'>
-                            <b><?= trim($meeting["doctopic_text"]); ?></b>
-                        </div>
-                        <div style='width:100%;margin-bottom:20px;margin-top:20px;'>
-                            <?= trim($meeting["detail"]); ?>
-                        </div>
-                        <table class="tbl_index" border="0" style="width:100%;">
-                            <?php echo $terms_mobile; ?>                            
-                        </table>    
-                    </div>
-            
                     <!-- Page display-->            
-                    <div class="display" style="margin:0 auto;height:auto;">
+                    <div style="margin:0 auto;height:auto;">
                         <div class='topic'>
                             <b><?= trim($meeting["doctopic_text"]); ?></b>
                         </div>

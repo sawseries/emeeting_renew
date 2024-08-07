@@ -72,31 +72,6 @@ body{
   src: url('./assets/font/PSUStidti/PSU-Stidti-Bold.otf');
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transition: max-height 0.2s ease-in;
-    opacity: 0.8;
-}
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "PSU-Stidti-Regular","PSU-Stidti-Light","PSU-Stidti-Bold",sans-serif;
-}
-
-.navbar {
-    /*background-color:#0c4678;*/
-    box-shadow: 5px 0px 5px #ccc;
-    width:100vm;  
-    padding: 0px 60px;
-    background-color:#f7f7f7;
-    margin:0;
-    border:1px solid #778899;
-}
 
 .navbartop{
     background-color:#00a8cf;
@@ -105,6 +80,38 @@ body{
     padding: 0px 40px;
     height: 40px;
     color:white;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: max-height 0.2s ease-in;
+    opacity:1;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "PSU-Stidti-Regular","PSU-Stidti-Light","PSU-Stidti-Bold",sans-serif;
+}
+
+/*navbar*/
+
+
+.arrow{
+  float:right;width:20px;text-align:right;font-size:12px;
+}
+
+.navbar {
+    
+    box-shadow: 5px 0px 5px #ccc;
+    width:100vm;  
+    padding: 0px 40px;
+    border:1px solid #CCD1D1;
+    background-color:white;
 }
 
 
@@ -119,19 +126,48 @@ body{
     background-color:transparent;
     padding:0.2rem;
     font-size:18pt;
-    border-radius:5px;
+    color:black;
+    border:0px solid;
+
+}
+
+
+.navbar-login{
+  margin:10px;
+  padding: 10px 10px;
+  color: #e9eef4;
+  background-color:#4EACF8;
+}
+
+.navbar-login li{
+   text-decoration: none;
+   display:block;
+
+}
+
+.navbar-login li a{
+  color:#FFF;
+  padding: 10px 10px;
+  font-weight: 700;
+  transition: 0.4s all;
+}
+
+.navbar-login li a:hover{
+  color: #000;
 }
 
 .navbar-logo{
     list-style-type: none;
     display: flex;
     width:auto;
+    margin:10px;
 }
 
 .navbar-logo li a{
   display: block;
   text-decoration: none;
   color: #444;
+  padding: 20px 20px;
   font-weight: 700;
   transition: 0.5s all;
 }
@@ -140,30 +176,19 @@ body{
 .navbar-links {
   list-style-type: none;
   display: flex;
-  width:auto;
+  width:100vh;
 }
 
-.navbar-login{
-    list-style-type: none;
-    display: flex;
-    width:auto;
-}
 
-.navbar-login li a {
- 
-  text-decoration: none;
-  color: #FFF;
-  padding:10px 40px;
-  font-weight: 700;
-  transition: 0.4s all;
+.navbar-links{
+  margin:10px;
 }
 
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #FFF;
-  padding:0;
-  font-weight: 700;
+  color:#000;
+  padding: 4px 5px;
   transition: 0.4s all;
 }
 
@@ -175,7 +200,7 @@ body{
   display: block;
   text-decoration: none;
   color: #444;
-  padding:0;
+  padding: 4px 5px;
   font-weight: 700;
   transition: 0.4s all;
 }
@@ -194,7 +219,7 @@ body{
   padding:0;
   top:100%;
   left: 0;
-  width: 250px;
+  width:350px;
   background-color: #fff;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
   border-bottom-left-radius: 3px;
@@ -205,32 +230,21 @@ body{
 .dropdown{
     /*display:none;*/
     transition: transform .5s cubic-bezier(0.88,-0.72, 0, 1), opacity .3s ease-in-out;
-	transform: translateY(-4rem);
+	  transform: translateY(-4rem);
     opacity: 1;
     visibility: visible;
     transform: translateY(0px);
-    display:none;  
+   display:none;  
 }
 
 
 .navbar-links li.navbar-dropdown .dropdown a {
   font-weight: 400;
-  padding:0; 
-  color:black;
+  padding:15px; 
 }
 .navbar-dropdown .dropdown a:hover {
   padding-left: 30px;
 }
-
-.navbar-links li a{
-  color: black;
-}
-
-
-.navbar-links li a .active{
-  color: white;
-}
-
 .navbar-links li a:hover {
   color: #4EACF8;
   background-color:#e9eef4;
@@ -245,13 +259,14 @@ body{
 }
 
 .navbar-links li.navbar-dropdown .lbmenu span:hover{
-      color: #4EACF8;
-      background-color:#e9eef4;
-    }
+color: #4EACF8;
+background-color:#e9eef4;
+}
 
     .navbar-links li.navbar-dropdown .lbmenu span{
-      padding:10px 40px;
-      font-variant : small-caps;
+      padding: 15px 20px;
+      color :#B3B9B9;
+      font-weight: normal !important;
       cursor : pointer;
       display: block;
     }
@@ -259,18 +274,15 @@ body{
     .navbar-links .navbar-dropdown .dropdown li{
       list-style-type:none;
       display:block;
+      padding:1.5rem;
+      border-bottom:1px solid #ccc;
     }
 
     .navbar-links .navbar-dropdown .dropdown li:hover{
       color: #4EACF8;
-      background-color:#e9eef4;
+  background-color:#e9eef4;
     }
 
-
-    .active{
-        color: #FFF;
-        background-color:#56baed;
-    }
 
 
    
@@ -287,13 +299,35 @@ body{
     padding: 0px;
     }
 
-    .navbar-links{
-        width: 100vh;
+   
+    .navbar {
+    padding: 0px;
+    margin:0;
+    left:0;
+    }
+
+  .navbar-links{
+        width: 100%;
         transition: all 0.3s ease-in;
         top:0;
         display:block;
+        position:relative;
+        padding: 0px;
+    margin:0;
+    left:0;
     }
 
+    .navbar-links li.navbar-dropdown .lbmenu span:hover{
+    color: #4EACF8;
+    background-color:#e9eef4;
+  }
+
+
+    .navbar-links .navbar-dropdown .dropdown li:hover{
+      color: #4EACF8;
+      background-color:#e9eef4;
+      position:relative;
+    }
 
     .navbar-links li.navbar-dropdown:hover .dropdown {
       visibility: hidden;
@@ -302,14 +336,13 @@ body{
       display:none;  
     }
 
-
-    .navbar-links li.navbar-dropdown .lbmenu span{
-      padding:2em;
-      color : black;
-      font-variant : small-caps;
-      cursor : pointer;
-      display: block;
-      width:100vh;
+   .navbar-links li.navbar-dropdown .lbmenu span{
+    padding:2em;
+    color : #000;
+    font-variant : small-caps;
+    cursor : pointer;
+    width:95vw;
+     display: block;
     }
 
     .navbar-links li.navbar-dropdown .dropdown {
@@ -324,14 +357,14 @@ body{
     border-bottom-right-radius: 3px;
     z-index: 111;
     transition: 0.4s all;
-    width:100vh;
+    width:100%;
    }
 
-   .dropdown{
+  .dropdown{
     display:none;
     transition: transform .6s cubic-bezier(1,-0.72, 0, 1), opacity .6s ease-in-out;
-	transform: translateY(-10rem);
-    }
+	  transform: translateY(-10rem);
+  }
 
     #menu1:checked +ul{
       visibility: visible;
@@ -398,8 +431,9 @@ body{
     <div class="navbartop">
     <ul class="navbar-logo" style="float:left;color:white;">Emeeting | อุทยานวิทยาศาสตร์ มหาวิทยาลัยสงขลานครินทร์</ul>
     </div>
-    <div class="navbar">
-      <ul class="navbar-logo" style="float:left;margin-right:20px;">
+   
+   <div class="navbar">
+      <ul class="navbar-logo" style="float:left;">
       <li class="navlogo"><img src="./assets/image/PSUSP_logo.jpg" width="200px"  height="40px" /></li>     
       </ul>
 
@@ -413,86 +447,42 @@ body{
       </ul>
 
       <?php if ((auth() == true)) { ?>
-     <div class="collapse navbar-collapse" id="collapsibleNavbar">
 
-     <ul class="navbar-links" style="float:left;">  
-     <li class="navbar-dropdown active">
+
+
+      <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+      <ul class="navbar-links" style="float:left;">  
+
+        <li class="navbar-dropdown active">
           <label for="menu1" class="lbmenu" style="color:white;"><span><a href="./index.php?controller=Master&action=index">หน้าแรก</a></span></label> 
         </li>
 
         <li class="navbar-dropdown">
-          <label for="menu2" class="lbmenu"><span><a href="./index.php?controller=Master&action=shwdoc&type=1">ระเบียบวาระการประชุม</a></span></label> 
-          <input id="menu2" type="checkbox" name="menu" hidden>
+          <label for="menu2" class="lbmenu"><span><a href="./index.php?controller=Master&action=shwdoc&type=1">ระเบียบวาระการประชุม</a></span>  </label>          
+          <input id="menu2" type="checkbox" name="menu" hidden> 
         </li>
         <li class="navbar-dropdown">
           <label for="menu3" class="lbmenu"><span><a href="./index.php?controller=Master&action=shwdoc&type=2">รายงานการประชุม</a></span></label> 
           <input id="menu3" type="checkbox" name="menu" hidden>
         </li>
+      
+      </ul>
 
-    </ul>
-    <ul class="navbar-login active" style="float:right;height:40px;">
+      <ul class="navbar-login" style="float:right;">
         <li><a href="./index.php?controller=Auth&action=logout">Logout</a></li>
-    </ul>
-    <?php }else{ ?>
-      <!--<ul class="navbar-links" style="float:left;">  
+      </ul>
 
-        <li class="navbar-dropdown active">
-          <label for="menu1" class="lbmenu"><span>หน้าแรก</span></label> 
-        </li>
-
-        <li class="navbar-dropdown">
-          <label for="menu1" class="lbmenu"><span>เกี่ยวกับเรา</span></label> 
-          <input id="menu1" type="checkbox" name="menu" hidden>
-          <ul class="dropdown"> 
-            <li href="#">Tomato Soup</a>
-            <li href="#">Veg Manchow Soup</a>
-            <li href="#">Veg Hot Soup</a>
-          </ul>
-        </li>
-        <li class="navbar-dropdown">
-          <label for="menu2" class="lbmenu"><span>หลักสูตร</span></label> 
-          <input id="menu2" type="checkbox" name="menu" hidden>
-          <ul class="dropdown"> 
-            <li href="#">Tomato Soup</a>
-            <li href="#">Veg Manchow Soup</a>
-            <li href="#">Veg Hot Soup</a>
-          </ul>
-        </li>
-        <li class="navbar-dropdown">
-          <label for="menu3" class="lbmenu"><span>ติดต่อ</span></label> 
-          <input id="menu3" type="checkbox" name="menu" hidden>
-          <ul class="dropdown"> 
-            <li href="#">Tomato Soup</a>
-            <li href="#">Veg Manchow Soup</a>
-            <li href="#">Veg Hot Soup</a>
-          </ul>
-        </li>
-        <li class="navbar-dropdown">
-          <label for="menu4" class="lbmenu"><span>ผู้เกี่ยวข้อง</span></label> 
-          <input id="menu4" type="checkbox" name="menu" hidden>
-          <ul class="dropdown"> 
-            <li href="#">Tomato Soup</a>
-            <li href="#">Veg Manchow Soup</a>
-            <li href="#">Veg Hot Soup</a>
-          </ul>
-        </li>
-        <li class="navbar-dropdown">
-          <label for="menu5" class="lbmenu"><span>Chinese</span></label> 
-          <input id="menu5" type="checkbox" name="menu" hidden>
-          <ul class="dropdown"> 
-            <li href="#">Tomato Soup</a>
-            <li href="#">Veg Manchow Soup</a>
-            <li href="#">Veg Hot Soup</a>
-          </ul>
-        </li>
-      </ul>-->
+      <?php }else{ ?>
     
-      <ul class="navbar-login active" style="float:right;">
+      <ul class="navbar-login" style="float:right;">
         <li><a href="./index.php?controller=Auth&action=login">Login</a></li>
       </ul>
-      <?php } ?>
+   
+    <?php } ?>
+
     </div>
 </div>
+
    
 <div class="container-fluid white" id="page-content-wrapper" style='min-height:1200px;'>                 
   

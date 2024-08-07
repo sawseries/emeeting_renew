@@ -5,7 +5,10 @@
     <script type="text/javascript" src="./front/agenda/agenda_element.js?key=<?php echo time(); ?>"></script>
     <script type="text/javascript" src="./front/agenda/agenda_control.js?key=<?php echo time(); ?>"></script>
 </head>
-<div class="col-md-12 blog-main">
+
+
+<div class="container white" id="page-content-wrapper" style='min-height:1200px;'>                 
+  <div class="row">    
     <div class="blog-post" style="padding:1em;padding-bottom:200px;">
 
         <div>

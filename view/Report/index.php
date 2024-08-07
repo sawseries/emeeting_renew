@@ -15,7 +15,7 @@
                 </div>   
     <?php }
     } ?> 
-    <div style='margin-top:50px;'>
+    <div class='search-panel' style='margin-top:50px;'>
     <form method="GET" action="./index.php">
     <input type="hidden" class='form-control' id="controller" name="controller" value='Report'> 
     <input type="hidden" class='form-control' id="action" name="action" value='search'>
@@ -37,7 +37,7 @@
     </form>
     </div>
 
-             <table class="table_main" border="1">
+             <table class="table_main" border="1" style="width:100%;">
                 <tr class="header_blue">
                     <td style="text-align:center;width:10%">รหัสเอกสาร</td> 
                     <td style='width:60%;'>หัวข้อ</td>
